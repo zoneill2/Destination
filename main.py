@@ -15,7 +15,7 @@ def send_mail(text = 'Email Body', subject='Hello World', from_email='jwams22@gm
 
     txt_part = MIMEText(text, 'plain')
     msg.attach(txt_part)
-    
+
     if html != None:
         html_part = MIMEText("<h1>this is working</h1>", 'html')
         msg.attach(txt_part)
